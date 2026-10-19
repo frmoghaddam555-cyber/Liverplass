@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>اپ من</title>
+<style>
+  body { font-family: sans-serif; text-align: center; padding-top: 80px; background: #f4f4f4; }
+  h1 { font-size: 80px; margin: 20px; }
+  button { font-size: 24px; padding: 15px 30px; margin: 8px; border: none; border-radius: 12px; background: #2e7d32; color: white; }
+</style>
+</head>
+<body>
+  <h2>شمارنده</h2>
+  <h1 id="n">0</h1>
+  <button onclick="change(1)">+</button>
+  <button onclick="change(-1)">−</button>
+  <script>
+    let n = 0;
+    function change(x) { n += x; document.getElementById('n').textContent = n; }
+  </script>
+</body>
+</html>
